@@ -1882,7 +1882,7 @@ void uart_communication_fsm(){
 	}
 }
  8000af4:	e05b      	b.n	8000bae <uart_communication_fsm+0xd2>
-		if (cmd_flag == FLAG_1){
+		if (cmd_flag == FLAG_1){		//RST
  8000af6:	4b30      	ldr	r3, [pc, #192]	; (8000bb8 <uart_communication_fsm+0xdc>)
  8000af8:	681b      	ldr	r3, [r3, #0]
  8000afa:	2b15      	cmp	r3, #21
@@ -1929,7 +1929,7 @@ void uart_communication_fsm(){
  8000b48:	f7ff fe2c 	bl	80007a4 <setTimer>
 		break;
  8000b4c:	e02c      	b.n	8000ba8 <uart_communication_fsm+0xcc>
-		else if (cmd_flag == FLAG_2){
+		else if (cmd_flag == FLAG_2){	//OK
  8000b4e:	4b1a      	ldr	r3, [pc, #104]	; (8000bb8 <uart_communication_fsm+0xdc>)
  8000b50:	681b      	ldr	r3, [r3, #0]
  8000b52:	2b16      	cmp	r3, #22

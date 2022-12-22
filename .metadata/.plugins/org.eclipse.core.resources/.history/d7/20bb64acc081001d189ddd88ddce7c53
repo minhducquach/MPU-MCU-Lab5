@@ -20,7 +20,7 @@ char str[30];
 void uart_communication_fsm(){
 	switch(uart_status){
 	case IDLE:
-		if (cmd_flag == FLAG_1){		//RST
+		if (cmd_flag == FLAG_1){	//RST
 			uart_status = SEND;
 			HAL_ADC_Start(&hadc1);
 			ADC_value = HAL_ADC_GetValue(&hadc1);

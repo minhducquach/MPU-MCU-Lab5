@@ -23,8 +23,8 @@
 #define 	CM_K					14
 #define		CM_OK_FINISHED			15
 
-#define		FLAG_1					21		//RST
-#define		FLAG_2					22		//OK
+#define		FLAG_1					21
+#define		FLAG_2					22
 
 extern int cmd_flag;
 extern int cmd_status;
