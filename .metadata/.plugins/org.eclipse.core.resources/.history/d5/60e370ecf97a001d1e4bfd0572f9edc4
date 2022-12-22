@@ -1,0 +1,33 @@
+/*
+ * command.c
+ *
+ *  Created on: Dec 13, 2022
+ *      Author: Minh Duc Quach
+ */
+
+#include "command.h"
+
+int cmd_status = CM_INIT;
+int cmd_flag = CM_INIT;
+
+void command_parser_fsm(){
+	switch(cmd_status){
+	case CM_INIT:
+		cmd_status = CM_START;
+		break;
+	case CM_START:
+		if (buffer[index_buffer] == '!'){
+			cmd_status = cmd_FIRST;
+		}
+		break;
+	case CM_FIRST:
+		if (buffer[index_buffer] == 'R' || buffer[index_buffer] == 'r'){
+			cmd_status = cmd_R;
+		}
+		else if (buffer[index_buffer] == 'O' || buffer[index_buffer] == 'o'){
+			cmd_status = cmd_O;
+		}
+		else cmd_status = CM_START;
+		break;
+	}
+}

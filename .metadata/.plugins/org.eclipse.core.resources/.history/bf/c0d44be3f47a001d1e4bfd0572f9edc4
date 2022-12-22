@@ -1,0 +1,30 @@
+/*
+ * command.h
+ *
+ *  Created on: Dec 13, 2022
+ *      Author: Minh Duc Quach
+ */
+
+#ifndef INC_COMMAND_H_
+#define INC_COMMAND_H_
+
+#include "global.h"
+
+#define 	CM_INIT					0
+#define 	CM_START				1
+#define		CM_!					2
+
+#define		CM_!R					3
+#define 	CM_!RS					4
+#define 	CM_!RST					5
+#define		CM_!RST#_FINISHED		6
+
+#define		CM_!O					13
+#define 	CM_!OK					14
+#define		CM_!OK#_FINISHED		15
+
+
+
+void command_parser_fsm();
+
+#endif /* INC_COMMAND_H_ */

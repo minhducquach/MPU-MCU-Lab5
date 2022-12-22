@@ -1,0 +1,13 @@
+/*
+ * uart.h
+ *
+ *  Created on: Dec 13, 2022
+ *      Author: Minh Duc Quach
+ */
+
+#ifndef INC_UART_H_
+#define INC_UART_H_
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef*);
+
+#endif /* INC_UART_H_ */

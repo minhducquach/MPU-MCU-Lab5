@@ -1,0 +1,17 @@
+/*
+ * command.h
+ *
+ *  Created on: Dec 13, 2022
+ *      Author: Minh Duc Quach
+ */
+
+#ifndef INC_COMMAND_H_
+#define INC_COMMAND_H_
+
+#include "global.h"
+
+#define MAX_BUFFER_SIZE	30
+
+void command_parser_fsm();
+
+#endif /* INC_COMMAND_H_ */

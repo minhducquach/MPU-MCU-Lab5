@@ -1,0 +1,14 @@
+/*
+ * command.c
+ *
+ *  Created on: Dec 13, 2022
+ *      Author: Minh Duc Quach
+ */
+
+#include "command.h"
+
+int cmd_status = CM_INIT;
+
+void command_parser_fsm(){
+
+}

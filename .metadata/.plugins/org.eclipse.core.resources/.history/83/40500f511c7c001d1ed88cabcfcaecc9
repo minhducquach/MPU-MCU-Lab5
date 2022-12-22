@@ -1,0 +1,71 @@
+/*
+ * command.c
+ *
+ *  Created on: Dec 13, 2022
+ *      Author: Minh Duc Quach
+ */
+
+#include "command.h"
+
+int cmd_status = CM_INIT;
+int cmd_flag = CM_INIT;
+
+void command_parser_fsm(){
+//	switch(cmd_status){
+//	case CM_INIT:
+//		cmd_status = CM_START;
+//		break;
+//	case CM_START:
+//		if (buffer[index_buffer] == '!'){
+//			cmd_status = CM_FIRST;
+//		}
+//		break;
+//	case CM_FIRST:
+//		if (buffer[index_buffer] == 'R' || buffer[index_buffer] == 'r'){
+//			cmd_status = CM_R;
+//		}
+//		else if (buffer[index_buffer] == 'O' || buffer[index_buffer] == 'o'){
+//			cmd_status = CM_O;
+//		}
+//		else cmd_status = CM_START;
+//		break;
+//	case CM_R:
+//		if (buffer[index_buffer] == 'S' || buffer[index_buffer] == 's'){
+//			cmd_status = CM_S;
+//		}
+//		else cmd_status = CM_START;
+//		break;
+//	case CM_S:
+//		if (buffer[index_buffer] == 'T' || buffer[index_buffer] == 't'){
+//			cmd_status = CM_T;
+//		}
+//		else cmd_status = CM_START;
+//		break;
+//	case CM_T:
+//		if (buffer[index_buffer] == '#'){
+//			cmd_status = CM_RST_FINISHED;
+//		}
+//		else cmd_status = CM_START;
+//		break;
+//	case CM_RST_FINISHED:
+//		cmd_flag = FLAG_1;
+//		cmd_status = CM_START;
+//		break;
+//	case CM_O:
+//		if (buffer[index_buffer] == 'K' || buffer[index_buffer] == 'k'){
+//			cmd_status = CM_K;
+//		}
+//		else cmd_status = CM_START;
+//		break;
+//	case CM_K:
+//		if (buffer[index_buffer] == '#'){
+//			cmd_status = CM_OK_FINISHED;
+//		}
+//		else cmd_status = CM_START;
+//		break;
+//	case CM_OK_FINISHED:
+//		cmd_flag = FLAG_2;
+//		cmd_status = CM_START;
+//		break;
+//	}
+}
